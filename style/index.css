@@ -47,7 +47,24 @@ html {
 }
 /* reset complete */
 
+/* declarations */
+html {
+    background-color: bisque;
+}
+
+body {
+    background-color: silver;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
 /* header declarations */
+h3 {
+    font-size: 3rem;
+    color: darkslategray;
+}
+
 nav {
     display: flex;
     justify-content: center;
@@ -56,7 +73,21 @@ nav {
 nav a {
     background-color: navy;
     color:antiquewhite;
+    font-size: 2.5rem;
+    font-weight: 500;
     margin: 0 1rem;
     padding: 0.5rem;
     border-radius: 1rem;
+}
+
+/* footer declarations */
+footer {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.contacts {
+    display: flex;
+    flex-flow: column nowrap;
 }
