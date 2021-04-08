@@ -60,6 +60,12 @@ body {
 }
 
 /* header declarations */
+h1 {
+    font-size: 5rem;
+    text-align: center;
+    margin: 2rem 0 1rem 0;
+}
+
 h3 {
     font-size: 3rem;
     color: darkslategray;
@@ -68,6 +74,7 @@ h3 {
 nav {
     display: flex;
     justify-content: center;
+    margin: 0 0 2rem 0;
 }
 
 nav a {
@@ -80,6 +87,24 @@ nav a {
     border-radius: 1rem;
 }
 
+/* main section declarations */
+.about, .main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 90%;
+    margin: 3rem auto;
+}
+
+.about p, .main p {
+    color: darkslategray;
+    background-color: antiquewhite;
+    width: 80%;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1%;
+}
+
 /* footer declarations */
 footer {
     display: flex;
@@ -90,4 +115,8 @@ footer {
 .contacts {
     display: flex;
     flex-flow: column nowrap;
+}
+
+.contacts a {
+    font-size: 2rem;
 }
