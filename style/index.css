@@ -47,4 +47,16 @@ html {
 }
 /* reset complete */
 
+/* header declarations */
+nav {
+    display: flex;
+    justify-content: center;
+}
 
+nav a {
+    background-color: navy;
+    color:antiquewhite;
+    margin: 0 1rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
