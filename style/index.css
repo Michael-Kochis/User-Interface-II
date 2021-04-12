@@ -57,6 +57,7 @@ body {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
+    width: 100%
 }
 
 /* header declarations */
@@ -142,4 +143,85 @@ footer {
 
 .contacts a {
     font-size: 2rem;
+}
+
+#contactMe {
+    display: none;
+}
+
+/* Responsive media queries */
+
+/* Responsive tablet */
+@media (max-width: 800px) {
+    .project-list {
+        flex-flow: row wrap;
+    }
+
+    .project-list img {
+        width: 30%;
+        margin: 0.5rem 0;
+    }
+
+    .project-list p {
+        width: 50%;
+        margin: 0.5rem 0;
+    }
+}
+
+/* Responsive mobile */
+@media (max-width: 500px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h3 { 
+        font-size: 1.5rem;
+    }
+
+    footer h3{
+        display: none;
+    }
+
+    nav {
+        margin: 0;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    nav a {
+        font-size: 0.5rem;
+        width: 20%;
+    }
+
+    .project-list {
+        flex-flow: row wrap;
+        align-items: center;
+    }
+
+    .project-list img {
+        width: 45%;
+        margin: 0.5rem 0;
+    }
+
+    .project-list p {
+        width: 90%;
+        margin: 0.5rem 0;
+    }
+
+    .contacts {
+        display: none;
+    }
+
+    #contactMe {
+        width: 25%;
+        display: inline-block;
+    }
 }
